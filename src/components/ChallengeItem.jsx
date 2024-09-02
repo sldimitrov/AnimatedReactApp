@@ -43,13 +43,13 @@ export default function ChallengeItem({
             </p>
           </div>
         </header>
-        <div className="challenge-item-details">
+        <div className={`challenge-item-details`}>
           <p>
             <button onClick={onViewDetails}>
               View Details{" "}
               <motion.span
                 animate={{ rotate: isExpanded ? 180 : 0 }}
-                transition={{ isExpanded: { duration: 0.3 }, type: "spring" }}
+                transition={{ duration: 0.3, type: "spring" }}
                 className="challenge-item-details-icon"
               >
                 &#9650;
